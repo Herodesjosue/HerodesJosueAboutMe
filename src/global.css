@@ -1,0 +1,22 @@
+/* Estilos de app*/
+
+.backgroundImg {
+  background-image: url("./img/521111.jpg");
+  background-size: cover;
+  height: 80vh;
+}
+
+/* este que se llama herodes es el titulo de im herodes */
+.herodes{
+
+  font-size: 60px;
+}
+/* esto para poder darle un buen margin */
+.marginModificado{
+  margin-top: 150px;
+}
+/* Estilos Footer*/
+.footer{
+  background-color: rgb(26, 29, 32);
+  height: 150px;
+}
