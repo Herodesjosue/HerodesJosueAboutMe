@@ -11,7 +11,7 @@ const Footer = () => {
             <hr className="text-white  my-0 opacity-25" />
           </div>
           <div className="col-lg-12 text-center p-2">
-            <h3  id="contact" className="text-white">Contact</h3>
+            {/* <h3  id="contact" className="text-white">Contact</h3> */}
             {/* <GitHubIcon className="text-white me-2 fs-3" />
             <TwitterIcon className="text-white me-2 fs-3" /> */}
           </div>
