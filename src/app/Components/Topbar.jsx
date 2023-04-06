@@ -13,7 +13,7 @@ const Links = [
 
 export default function Topbar() {
   return (
-    <Navbar className="shadow p-3 bg-body-tertiary " bg="dark" variant="dark">
+    <Navbar className="shadow p-3 bg-body-tertiary" bg="dark" variant="dark">
       <Container>
         <Navbar.Brand href="">HJLG</Navbar.Brand>
         <Nav className="me-auto">

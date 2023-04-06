@@ -56,6 +56,7 @@ export default function Contact() {
         <div className="row">
           <div className="col-lg-12">
             <Form.Group
+             style={{marginTop: "20px"}}
               className="mb-3 w-100 mx-auto"
               controlId="formBasicEmail"
             >
@@ -67,6 +68,7 @@ export default function Contact() {
                 }}
                 type="email"
                 placeholder="Enter email"
+                required
               />
               <Form.Text className="text-white">
                 i'll never share your email with anyone else.
@@ -86,6 +88,7 @@ export default function Contact() {
                 }}
                 type="text"
                 placeholder="Enter Name"
+                required
               />
             </Form.Group>
           </div>
@@ -100,6 +103,7 @@ export default function Contact() {
                 onChange={(e) => setMessage(e.target.value)}
                 as="textarea"
                 rows={3}
+                required
               />
             </Form.Group>
           </div>

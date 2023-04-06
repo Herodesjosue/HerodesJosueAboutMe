@@ -1,7 +1,9 @@
+"use client";
 import React from "react";
-// import GitHubIcon from "@mui/icons-material/GitHub";
-// import TwitterIcon from "@mui/icons-material/Twitter";
-
+import GitHubIcon from "@mui/icons-material/GitHub";
+import TwitterIcon from "@mui/icons-material/Twitter";
+import InstagramIcon from "@mui/icons-material/Instagram";
+import Link from "next/link";
 const Footer = () => {
   return (
     <div className="footer shadow p-3 bg-body-tertiary">
@@ -10,10 +12,16 @@ const Footer = () => {
           <div className="col-lg-12 mt-2 w-50 mx-auto">
             <hr className="text-white  my-0 opacity-25" />
           </div>
-          <div className="col-lg-12 text-center p-2">
-            {/* <h3  id="contact" className="text-white">Contact</h3> */}
-            {/* <GitHubIcon className="text-white me-2 fs-3" />
-            <TwitterIcon className="text-white me-2 fs-3" /> */}
+          <div className="col-lg-12 text-center p-3">
+            <Link href="https://github.com/Herodesjosue" target="_blank">
+              <GitHubIcon className="text-white me-2 fs-3" />
+            </Link>
+            <Link href="https://twitter.com/HerodesJosue" target="_blank">
+              <TwitterIcon className="text-white me-2 fs-3" />
+            </Link>
+            <Link href="https://www.instagram.com/josue.797/" target="_blank">
+              <InstagramIcon className="text-white me-2 fs-3" />
+            </Link>
           </div>
           <div className="col-lg-12 mt-2 w-75 mx-auto">
             <hr className="text-white my-0 opacity-25" />
