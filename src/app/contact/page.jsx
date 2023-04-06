@@ -6,25 +6,50 @@ import { useState, useEffect } from "react";
 export default function Contact() {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
-
-  const handleSubmit = (e) => {
+  const [message, setMessage] = useState("");
+  const [exito, setExito] = useState(false);
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    fetch("https://formsubmit.co/ajax/herodeslugo@gmail.com", {
+
+    const data = {
+      name: name,
+      email: email,
+      message: message,
+    };
+
+    const headers = {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
         Accept: "application/json",
       },
-      body: JSON.stringify({
-        name: name,
-        message: email,
-      }),
-    })
-      .then((response) => response.json())
-      .then((data) => console.log(data))
-      .catch((error) => console.log(error));
+      body: JSON.stringify(data),
+    };
+
+    try {
+      const response = await fetch(
+        "https://formsubmit.co/ajax/herodeslugo@gmail.com",
+        headers
+      );
+
+      const responseData = await response.json();
+      setExito(true);
+      setTimeout(() => {
+        setExito(false);
+        handleClear();
+      },2000)
+
+      console.log(responseData);
+    } catch (error) {
+      console.error(error);
+    }
   };
 
+  const handleClear = () => {
+    setName("");
+    setEmail("");
+    setMessage("");
+  };
   return (
     <div>
       <Form className="container p-5 text-white" onSubmit={handleSubmit}>
@@ -43,8 +68,8 @@ export default function Contact() {
                 type="email"
                 placeholder="Enter email"
               />
-              <Form.Text className="text-muted">
-                We'll never share your email with anyone else.
+              <Form.Text className="text-white">
+                i'll never share your email with anyone else.
               </Form.Text>
             </Form.Group>
           </div>
@@ -62,11 +87,29 @@ export default function Contact() {
                 type="text"
                 placeholder="Enter Name"
               />
-              <Form.Text className="text-muted">
-                We'll never share your email with anyone else.
-              </Form.Text>
             </Form.Group>
           </div>
+          <div className="col-lg-12">
+            <Form.Group
+              className="mb-3"
+              controlId="exampleForm.ControlTextarea1"
+            >
+              <Form.Label>Message</Form.Label>
+              <Form.Control
+                value={message}
+                onChange={(e) => setMessage(e.target.value)}
+                as="textarea"
+                rows={3}
+              />
+            </Form.Group>
+          </div>
+          {exito ? 
+          <div className="col-lg-12">
+            <h3 className="text-center" style={{backgroundColor: "green", padding: "10px",}}>
+            Form sent
+            </h3>
+          </div>
+          : null }
           <div className="col-lg-12">
             <Button variant="primary" type="submit">
               Submit
