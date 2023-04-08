@@ -16,6 +16,8 @@
     "@mui/icons-material": "^5.11.16",
     "@mui/material": "^5.11.16",
     "bootstrap": "^5.2.3",
+    "font": "^0.0.4",
+    "fonts": "^0.0.2",
     "next": "13.2.4",
     "react": "18.2.0",
     "react-bootstrap": "^2.7.2",

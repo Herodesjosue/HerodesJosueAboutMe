@@ -19,11 +19,7 @@ export default function Topbar() {
         <Nav className="me-auto">
           {Links.map(({ path, name }) => {
             return (
-              <Link
-                className="text-white text-decoration-none p-2"
-                key={name}
-                href={path}
-              >
+              <Link className="p-2 links" key={name} href={path}>
                 {name}
               </Link>
             );
