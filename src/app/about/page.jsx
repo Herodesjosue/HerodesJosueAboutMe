@@ -26,11 +26,14 @@ export default function About() {
             <div className="col-lg-12">
               <ul className="text-white">
                 <li>React</li>
-                <li>Next</li>
+                <li>JavaScript</li>
+                <li>Git</li>
+                <li>Supabase</li>
+                <li>NextJs</li>
                 <li>Python</li>
                 <li>BootStrap</li>
-                <li>C#</li>
-                <li>SQL SERVER</li>
+                <li>Express</li>
+                <li>Sql Server</li>
               </ul>
             </div>
           </div>
