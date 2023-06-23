@@ -37,7 +37,7 @@ export default function Projects() {
                     className="cardModi"
                     style={{
                       width: "500px",
-                      height: "500px",
+                      height: "560px",
                       padding: "10px",
                       marginRight: "10px",
                       marginBottom: "10px",

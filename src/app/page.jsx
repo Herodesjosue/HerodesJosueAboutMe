@@ -13,17 +13,16 @@ export default function App() {
             </div>
             <div className="col-lg-12">
               <h2
-                className="
-              
-              text-center text-white d-flex justify-content-center"
+                className="text-center text-white d-flex justify-content-center mt-2"
               >
                 🧑‍💻Web{" "}
                 <p
                   style={{
                     backgroundColor: "White",
-
                     color: "black",
-                    width: "150px",
+                    width: "125px",
+                    marginLeft: "2px",
+                    
                   }}
                 >
                   Developer
