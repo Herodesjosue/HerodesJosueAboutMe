@@ -30,7 +30,7 @@ export default function About() {
                 <li>Git</li>
                 <li>Supabase</li>
                 <li>NextJs</li>
-                <li>Python</li>
+                <li>Mysql Server</li>
                 <li>BootStrap</li>
                 <li>Express</li>
                 <li>Sql Server</li>
