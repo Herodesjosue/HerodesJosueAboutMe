@@ -30,10 +30,12 @@ export default function About() {
                 <li>Git</li>
                 <li>Supabase</li>
                 <li>NextJs</li>
-                <li>Mysql Server</li>
+                {/* <li>Mysql Server</li> */}
                 <li>BootStrap</li>
-                <li>Express</li>
-                <li>Sql Server</li>
+                <li>Tailwind CSS</li>
+
+                {/* <li>Express</li> */}
+                {/* <li>Sql Server</li> */}
               </ul>
             </div>
           </div>

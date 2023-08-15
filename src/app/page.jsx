@@ -20,7 +20,7 @@ export default function App() {
                   style={{
                     backgroundColor: "White",
                     color: "black",
-                    width: "125px",
+                    width: "auto",
                     marginLeft: "2px",
                     
                   }}
